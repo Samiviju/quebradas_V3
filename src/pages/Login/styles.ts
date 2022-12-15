@@ -1,53 +1,56 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   logo: {
-    position: 'absolute',
+    position: "absolute",
     top: 170,
-    left: 50
+    left: 50,
   },
 
   grafite1: {
     left: 160,
-    top: 65
+    top: 31,
   },
 
+  containerView: {
+    width: 400,
+  },
 
   backgroudFundo: {
     height: 210,
     borderBottomRightRadius: 36,
     borderBottomLeftRadius: 36,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     borderWidth: 1,
   },
 
   bemVindo: {
     fontSize: 27.5,
-    fontWeight: 'bold',
-    color: '#fff',
+    fontWeight: "bold",
+    color: "#fff",
     paddingBottom: 90,
-    fontFamily: 'Roboto'
-
+    fontFamily: "Roboto",
   },
 
   containerLogin: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 75
+    fex: 1,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 75,
   },
 
   textLogin: {
     fontSize: 24.42,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 
   containerInput: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   input: {
@@ -55,23 +58,23 @@ export const styles = StyleSheet.create({
     width: 232,
     margin: 12,
     borderWidth: 1.86,
-    borderColor: '#D9D9D9',
+    borderColor: "#D9D9D9",
     borderRadius: 9.28,
     padding: 10,
   },
 
   butao: {
-    backgroundColor: '#B400C6',
+    backgroundColor: "#B400C6",
     width: 232,
     height: 46.47,
     display: "flex",
     justifyContent: "center",
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#00000'
+    borderColor: "#00000",
   },
 
   grafite2: {
-    bottom: -74
-  }
+    bottom: -40,
+  },
 });
