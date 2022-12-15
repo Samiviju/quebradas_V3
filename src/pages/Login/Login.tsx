@@ -1,16 +1,31 @@
-import { View, Image, Text, TextInput, SafeAreaView, Button, Pressable, Alert } from "react-native";
-import { styled } from "nativewind";
+import {
+  View,
+  Image,
+  Text,
+  TextInput,
+  SafeAreaView,
+  Button,
+  Pressable,
+  Alert,
+} from "react-native";
 import { styles } from "./styles";
 import { LinearGradient } from "expo-linear-gradient";
 
-
 export default function Login() {
   return (
-    <View>
-
-      <LinearGradient colors={['rgb(180, 0, 198)', 'rgb(0,211,224)']} style={styles.backgroudFundo}>
-        <Image style={styles.grafite1} source={require("../../../assets/Group1.png")} />
-        <Image style={styles.logo} source={require("../../../assets/Logo.png")} />
+    <View style={styles.containerView}>
+      <LinearGradient
+        colors={["rgb(180, 0, 198)", "rgb(0,211,224)"]}
+        style={styles.backgroudFundo}
+      >
+        <Image
+          style={styles.grafite1}
+          source={require("../../../assets/Group1.png")}
+        />
+        <Image
+          style={styles.logo}
+          source={require("../../../assets/Logo.png")}
+        />
         <Text style={styles.bemVindo}>Bem-vindo(a) a</Text>
       </LinearGradient>
 
@@ -19,29 +34,62 @@ export default function Login() {
       </View>
 
       <SafeAreaView style={styles.containerInput}>
-        <TextInput
-          style={styles.input}
-          placeholder="seuemail@seudominio.com"
-        />
+        <TextInput style={styles.input} placeholder="seuemail@seudominio.com" />
         <TextInput
           style={styles.input}
           placeholder="Senha"
-          keyboardType='twitter'
+          keyboardType="twitter"
         />
 
         <Pressable style={styles.butao} onPress={alert}>
-          <Text style={{ textAlign: 'center', fontSize: 16.24, fontWeight: "bold", color: '#fff', textShadowColor: 'black' }}>Login</Text>
+          <Text
+            style={{
+              textAlign: "center",
+              fontSize: 16.24,
+              fontWeight: "bold",
+              color: "#fff",
+              textShadowColor: "black",
+            }}
+          >
+            Login
+          </Text>
         </Pressable>
 
-        <Text style={{ fontSize: 12, }}>Esqueceu sua senha?</Text>
+        <Text
+          onPress={() => Alert.alert("Pagina para Reset de Senha")}
+          style={{ fontSize: 12, fontWeight: "bold", margin: 10 }}
+        >
+          Esqueceu sua senha?
+        </Text>
       </SafeAreaView>
-      <Image style={styles.grafite2} source={require("../../../assets/path254.png")} />
+      <View
+        style={{
+          width: 400,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Text
+          onPress={() => Alert.alert("adasda")}
+          style={{
+            position: "absolute",
+            bottom: -100,
+            fontSize: 12,
+            fontWeight: "bold",
+          }}
+        >
+          Não está no Quebrada?{" "}
+          <Text style={{ color: "#B400C6" }}>Crie uma conta</Text>
+        </Text>
+      </View>
+      <Image
+        style={styles.grafite2}
+        source={require("../../../assets/path254.png")}
+      />
     </View>
-
-
   );
 }
-
 
 // import { withExpoSnack } from 'nativewind';
 
